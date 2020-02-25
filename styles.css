@@ -36,6 +36,7 @@ img {
 input {
     padding: 20px;
     margin: 20px;
+    width: 230px;
     text-align: center;
     font-size: 1.3rem;
 }
@@ -51,6 +52,5 @@ p {
 .qrImg {
     margin: 40px;
 }
-
 
 
