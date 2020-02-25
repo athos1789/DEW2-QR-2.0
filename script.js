@@ -10224,10 +10224,6 @@ var qrText = ['52aa5d7e-e0f1-bd84-7234-60100d5ddda3', 'beaa5d7e-4243-f481-3319-d
 "70abc88f-52ac-a50e-ff17-ceb89776c0f5",
 "46abc88f-49c9-7c2c-45ef-53f5ad02c03e"]
 
-// const pToDo = document.createElement("p");
-// pToDo.textContent = todo.text;
-// document.querySelector("body").appendChild(pToDo);
-
 
 
 // // row
@@ -10399,7 +10395,6 @@ const createColumn = function () {
     const col = document.createElement("div")
     col.classList.add("col");
     col.classList.add("col-md-4")
-    col.classList.add("col-12")
     document.querySelectorAll(".row")[row-1].appendChild(col)
 }
 
