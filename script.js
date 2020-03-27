@@ -10350,12 +10350,30 @@ function newImage(url) {
 
 
 
-qrbtn.addEventListener("click", generateQR);
+qrbtn.addEventListener("click", generateQR );
   
   function generateQR(){
 
-    qrtext.value = qrtext.value.toUpperCase();
-    i = qrLocation.indexOf(qrtext.value);
+    
+    let qrCo = qrtext.value.split("");
+    let newCode = "";
+    qrCo.forEach(function (letter) {
+      if(qrCo.indexOf(letter) === 0){
+         newCode += letter + "-";
+      } else if (qrCo.length === 4 && newCode.length === 2) {
+         newCode += letter + "."
+      } else if (qrCo.length === 5 && newCode.length === 3) {
+         newCode += letter + "."
+      } else {
+         newCode += letter;
+      }
+       
+       
+    })
+
+    
+    newCode = newCode.toUpperCase();
+    i = qrLocation.indexOf(newCode);
     qrtext.value = qrText[i]
   
   
