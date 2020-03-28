@@ -10358,7 +10358,7 @@ qrbtn.addEventListener("click", generateQR );
     let qrCo = qrtext.value.split("");
     let newCode = "";
     qrCo.forEach(function (letter) {
-      if(qrCo.indexOf(letter) === 0){
+      if(qrCo.indexOf(letter) === 0 && newCode.length === 0){
          newCode += letter + "-";
       } else if (qrCo.length === 4 && newCode.length === 2) {
          newCode += letter + "."
