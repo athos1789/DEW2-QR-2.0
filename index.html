@@ -90,6 +90,9 @@
         </tbody>
     </table>
         
+    <input id="threshold-input-mins" type="text" placeholder="mins">
+    <input id="threshold-input-hrs" type="text" placeholder="hrs">
+        
    
     <div class="container">
         <div class="container qr-generator">
@@ -110,6 +113,7 @@
     <script>
         
         const elementoClickeable = document.querySelector(".element-clickable")
+        document.querySelector("#threshold-input-mins").value = "45"
         
         elementoClickeable.addEventListener("click", (() => {
             console.log("me habeis clickeao!!");
